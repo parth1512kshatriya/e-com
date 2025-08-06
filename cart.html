@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section id="header">
+        <div class="logodiv">
+            <a href="index.html" class="logo">Shopper</a>
+        </div>
+
+        <div class="searchDiv">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for product" id="searchInput">
+            <button class="search">Search</button>
+        </div>
+
+        <div id="navbar">
+            <li><a href="#main" class="active">Home</a></li>
+            <li><a href="#product">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+
+            <div class="cart" style="position: relative;">
+                <li>
+                    <a href="cart.html" class="Navcart" style="position: relative; display: inline-block;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </div>
+
+
+
+            <div class="cancelBtn">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+        </div>
+
+        <div class="hamburger">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="imgs/f1 (1).jpg" alt="Product">
+                <div class="cart-item-details">
+                    <h3>Cartoon Astronaut T-shirt</h3>
+                    <p>Size: Medium</p>
+                    <div class="quantity-control">
+                        <button class="decrement">-</button>
+                        <span class="quantity">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button class="remove-item"><i class="fa-solid fa-trash"></i> Remove</button>
+            </div>
+
+        </div>
+
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Total: <span class="total-price">$78</span></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
